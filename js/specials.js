@@ -16,7 +16,6 @@ class DaySpecial {
   };
 
   showSpecials = (e) => {
-    console.log(this.specialDiv);
     var specialInfo = this.specials[$(e.currentTarget).val()];
     var divContent = $('<h3 />').text(specialInfo['title'])
       .append($('<img />').attr('src',specialInfo['image'],'alt',"today's special"))
